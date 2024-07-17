@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 218, 223, 224;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: 
+      rgb(var(--background-rgb))
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+}
+
+.heading::after {
+  content: 'save the stairs';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: url('/grunge2.jpg');
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+  mix-blend-mode: screen;
+  pointer-events: none; /* Ensure pseudo-element doesn't interfere with interactions */
+}
