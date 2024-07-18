@@ -20,11 +20,11 @@ export default function Example() {
         
         <h1 className={`${permanentMarker.className} heading  mt-2 text-3xl font-bold tracking-tight text-red-600 sm:text-6xl`}>Save The Stairs</h1>
 
-        <p className={`${inconsolata.className} text-base font-semibold leading-7 text-lg text-gray-600`}>Artist Collective</p>
+        <p className={`${inconsolata.className} tracking-widest	text-base font-semibold leading-7 text-lg text-gray-600`}>Artist Collective</p>
         
         <p className="mt-6 text-xl leading-8">
 
-           {`A collection of art, posters, paintings, and stickers from artists in Hawai'i, protesting the removal of the Hai'kū Stairs.`}
+           {`We are a collection of artists, protesting the removal of the Hai'kū Stairs.`}
         </p>
         <div className="mt-10 max-w-2xl">
 
@@ -48,7 +48,7 @@ export default function Example() {
             <li className="flex gap-x-3">
               <ArrowRightIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
               <span>
-                <strong className="font-semibold text-gray-900">Join the Movement.</strong> <a href="https://www.haikustairs.org/">Friends of {`Ha'iku`}</a> is a non-profit that has been fighting this fight since 1987.
+                <strong className="font-semibold text-gray-900">Join the Movement.</strong> <a className="text-red-600 underline" href="https://www.haikustairs.org/">Friends of {`Ha'iku`}</a> is a non-profit that has been fighting this fight since 1987.
                 They are our best hope for saving the stairs.  Donate to their legal fund, buy some merch and come to protests.
               </span>
             </li>
